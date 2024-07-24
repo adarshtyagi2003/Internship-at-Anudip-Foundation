@@ -21,3 +21,18 @@ else:
 finally:
     print("finally block")
 print("line 6")
+
+
+
+#handle forcefull exception
+
+def agecheck(age):
+    if age>=18:
+        print("you can vote")
+    else:
+        raise ValueError("you cannot vote")
+    
+try:
+     agecheck(14)
+except ValueError as e:
+    print(e)
